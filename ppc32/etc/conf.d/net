@@ -1,0 +1,10 @@
+dns_domain_lo="headup.local"
+
+modules_wlP1p16s27f2u1="wpa_supplicant dhcpcd"
+wpa_supplicant_wlP1p16s27f2u1="-Dwext -d -f /var/log/wpa_supplicant.log"
+config_wlP1p16s27f2u1="dhcp"
+
+modules_enP2p32s15f0=( "ifplugd" "!wpa_supplicant" "!iwconfig" "dhcpd")
+config_enP2p32s15f0="dhcp"
+dhcpd_enP2p32s15f0="-t 60 -H"
+ifplugd_enP2p32s15f0="--no-beep"
