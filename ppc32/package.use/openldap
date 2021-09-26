@@ -1,0 +1,1 @@
+net-nds/openldap berkdb crypt minimal ssl syslog tcpd -test

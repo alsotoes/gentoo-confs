@@ -1,0 +1,2 @@
+#!/bin/sh
+sleep 10s && /etc/init.d/ntp-client restart
