@@ -1,0 +1,307 @@
+pagani
+    description: Computer
+    product: Mac mini
+    vendor: Copyright 1983-2004 Apple Computer, Inc. All Rights Reserved
+    serial: RHR
+    width: 32 bits
+  *-core
+       description: Motherboard
+       physical id: 0
+       clock: 166MHz
+     *-firmware
+          product: OpenFirmware 3
+          physical id: 0
+          logical name: /proc/device-tree
+          capabilities: bootinfo
+     *-cpu
+          description: CPU
+          product: 7447A, altivec supported
+          physical id: 1
+          bus info: cpu@0
+          version: 1.2 (pvr 8003 0102)
+          size: 1249MHz
+          clock: 166MHz
+          capabilities: altivec performance-monitor
+        *-cache:0
+             description: L1 Cache
+             physical id: 0
+             size: 32KiB
+        *-cache:1
+             description: L2 Cache (unified)
+             physical id: 1
+             size: 512KiB
+             clock: 1249MHz (0.8ns)
+     *-memory
+          description: System memory
+          physical id: 2
+          size: 1GiB
+        *-bank
+             description: DDR SDRAM
+             product: PC3200U-30330
+             physical id: 0
+             version: 4141,05 18,01
+             serial: 0xffff3192
+             slot: DIMM0/J11
+             size: 1GiB
+             capabilities: spd-0.0
+             configuration: errordetection=none
+     *-pci:0
+          description: Host bridge
+          product: UniNorth 2 AGP
+          vendor: Apple Inc.
+          physical id: 100
+          bus info: pci@0000:00:0b.0
+          version: 00
+          width: 32 bits
+          clock: 66MHz
+          configuration: driver=agpgart-uninorth latency=16
+          resources: irq:0
+        *-display
+             description: VGA compatible controller
+             product: RV280 [Radeon 9200]
+             vendor: Advanced Micro Devices, Inc. [AMD/ATI]
+             physical id: 10
+             bus info: pci@0000:00:10.0
+             logical name: /dev/fb0
+             version: 01
+             width: 32 bits
+             clock: 66MHz
+             capabilities: agp agp-2.0 pm vga_controller bus_master cap_list rom fb
+             configuration: depth=8 driver=radeonfb latency=255 mingnt=8 resolution=640,480
+             resources: irq:48 memory:98000000-9fffffff ioport:400(size=256) memory:90000000-9000ffff memory:90020000-9003ffff
+     *-pci:1
+          description: Host bridge
+          product: UniNorth 2 PCI
+          vendor: Apple Inc.
+          physical id: 101
+          bus info: pci@0001:10:0b.0
+          version: 00
+          width: 32 bits
+          clock: 66MHz
+          configuration: latency=16
+        *-generic
+             description: Unassigned class
+             product: KeyLargo/Intrepid Mac I/O
+             vendor: Apple Inc.
+             physical id: 17
+             bus info: pci@0001:10:17.0
+             version: 00
+             width: 32 bits
+             clock: 33MHz
+             capabilities: bus_master
+             configuration: driver=macio latency=16
+             resources: irq:0 memory:80000000-8007ffff
+           *-ide
+                description: IDE Channel 0
+                physical id: 1
+                bus info: ide@1
+                logical name: ide1
+                clock: 33MHz
+        *-usb:0 UNCLAIMED
+             description: USB controller
+             product: KeyLargo/Intrepid USB
+             vendor: Apple Inc.
+             physical id: 18
+             bus info: pci@0001:10:18.0
+             version: 00
+             width: 32 bits
+             clock: 33MHz
+             capabilities: ohci
+             configuration: latency=0 maxlatency=86 mingnt=3
+        *-usb:1 UNCLAIMED
+             description: USB controller
+             product: KeyLargo/Intrepid USB
+             vendor: Apple Inc.
+             physical id: 19
+             bus info: pci@0001:10:19.0
+             version: 00
+             width: 32 bits
+             clock: 33MHz
+             capabilities: ohci
+             configuration: latency=0 maxlatency=86 mingnt=3
+        *-usb:2
+             description: USB controller
+             product: KeyLargo/Intrepid USB
+             vendor: Apple Inc.
+             physical id: 1a
+             bus info: pci@0001:10:1a.0
+             version: 00
+             width: 32 bits
+             clock: 33MHz
+             capabilities: ohci bus_master
+             configuration: driver=ohci-pci latency=16 maxlatency=86 mingnt=3
+             resources: irq:29 memory:80083000-80083fff
+        *-usb:3
+             description: USB controller
+             product: OHCI USB Controller
+             vendor: NEC Corporation
+             physical id: 1b
+             bus info: pci@0001:10:1b.0
+             version: 43
+             width: 32 bits
+             clock: 33MHz
+             capabilities: pm ohci bus_master cap_list
+             configuration: driver=ohci-pci latency=16 maxlatency=42 mingnt=1
+             resources: irq:63 memory:80082000-80082fff
+        *-usb:4
+             description: USB controller
+             product: OHCI USB Controller
+             vendor: NEC Corporation
+             physical id: 1b.1
+             bus info: pci@0001:10:1b.1
+             version: 43
+             width: 32 bits
+             clock: 33MHz
+             capabilities: pm ohci bus_master cap_list
+             configuration: driver=ohci-pci latency=16 maxlatency=42 mingnt=1
+             resources: irq:63 memory:80081000-80081fff
+        *-usb:5
+             description: USB controller
+             product: uPD72010x USB 2.0 Controller
+             vendor: NEC Corporation
+             physical id: 1b.2
+             bus info: pci@0001:10:1b.2
+             version: 04
+             width: 32 bits
+             clock: 33MHz
+             capabilities: pm ehci bus_master cap_list
+             configuration: driver=ehci-pci latency=16 maxlatency=34 mingnt=16
+             resources: irq:63 memory:80080000-800800ff
+     *-pci:2
+          description: Host bridge
+          product: UniNorth 2 Internal PCI
+          vendor: Apple Inc.
+          physical id: 102
+          bus info: pci@0002:20:0b.0
+          version: 00
+          width: 32 bits
+          clock: 66MHz
+          configuration: latency=16
+        *-generic
+             description: Unassigned class
+             product: UniNorth/Intrepid ATA/100
+             vendor: Apple Inc.
+             physical id: d
+             bus info: pci@0002:20:0d.0
+             version: 00
+             width: 32 bits
+             clock: 33MHz
+             capabilities: bus_master
+             configuration: driver=ide-pmac latency=32
+             resources: irq:39 memory:f5004000-f5007fff
+           *-ide
+                description: IDE Channel 0
+                physical id: 0
+                bus info: ide@0
+                logical name: ide0
+                clock: 33MHz
+              *-disk
+                   description: ATA Disk
+                   product: KINGSTON SUV400S37120G
+                   physical id: 0
+                   bus info: ide@0.0
+                   logical name: /dev/hda
+                   version: 0C3J96R9
+                   serial: 50026B766C032BE6
+                   size: 111GiB (120GB)
+                   capacity: 111GiB (120GB)
+                   capabilities: ata dma lba iordy smart security pm apm partitioned partitioned:mac
+                   configuration: apm=off logicalsectorsize=512 sectorsize=512 smart=on
+                 *-volume:0
+                      description: Apple partition map
+                      physical id: 1
+                      bus info: ide@0.0,1
+                      logical name: /dev/hda1
+                      capacity: 31KiB
+                 *-volume:1
+                      description: Apple Bootstrap
+                      physical id: 2
+                      bus info: ide@0.0,2
+                      logical name: /dev/hda2
+                      size: 797KiB
+                      capacity: 800KiB
+                      capabilities: bootable hfs initialized
+                      configuration: created=2017-07-06 04:15:50 filesystem=hfs label=bootstrap modified=2017-07-06 04:15:50 state=clean
+                 *-volume:2
+                      description: Linux swap volume
+                      physical id: 3
+                      bus info: ide@0.0,3
+                      logical name: /dev/hda3
+                      version: 1
+                      serial: d5d2a006-32b9-4903-8be9-e9ff0ab92b2d
+                      size: 4GiB
+                      capacity: 4GiB
+                      capabilities: swap initialized
+                      configuration: filesystem=swap pagesize=4096
+                 *-volume:3
+                      description: EXT4 volume
+                      vendor: Linux
+                      physical id: 4
+                      bus info: ide@0.0,4
+                      logical name: /dev/hda4
+                      logical name: /
+                      version: 1.0
+                      serial: 870c2cbc-d527-4942-bd14-20eb644fd9d5
+                      size: 107GiB
+                      capacity: 107GiB
+                      capabilities: journaled extended_attributes large_files huge_files dir_nlink recover extents ext4 ext2 initialized
+                      configuration: created=2017-07-05 23:28:10 filesystem=ext4 lastmountpoint=/ modified=2017-07-06 03:07:05 mount.fstype=ext4 mount.options=rw,noatime mounted=2021-09-21 17:06:27 state=mounted
+                 *-volume:4
+                      description: Apple UNIX SVR2
+                      physical id: 5
+                      bus info: ide@0.0,5
+                      logical name: /dev/hda5
+                      logical name: /boot
+                      capacity: 808MiB
+                      configuration: mount.fstype=xfs mount.options=rw,noatime,attr2,inode64,noquota state=mounted
+              *-cdrom
+                   description: DVD reader
+                   product: MATSHITACD-RW CW-8124
+                   physical id: 1
+                   bus info: ide@0.1
+                   logical name: /dev/hdb
+                   version: DACD
+                   capabilities: packet atapi cdrom removable nonmagnetic dma lba iordy audio cd-r cd-rw dvd
+                   configuration: mode=udma2 status=open
+        *-firewire
+             description: FireWire (IEEE 1394)
+             product: UniNorth 2 FireWire
+             vendor: Apple Inc.
+             physical id: e
+             bus info: pci@0002:20:0e.0
+             version: 81
+             width: 32 bits
+             clock: 33MHz
+             capabilities: pm ohci bus_master cap_list
+             configuration: driver=firewire_ohci latency=64 maxlatency=24 mingnt=12
+             resources: irq:40 memory:f5000000-f5000fff
+        *-network
+             description: Ethernet interface
+             product: UniNorth 2 GMAC (Sun GEM)
+             vendor: Apple Inc.
+             physical id: f
+             bus info: pci@0002:20:0f.0
+             logical name: enP2p32s15f0
+             version: 80
+             serial: 00:11:24:8c:5c:e2
+             size: 100Mbit/s
+             capacity: 100Mbit/s
+             width: 32 bits
+             clock: 66MHz
+             capabilities: bus_master rom ethernet physical tp mii 10bt 10bt-fd 100bt 100bt-fd autonegotiation
+             configuration: autonegotiation=on broadcast=yes driver=sungem driverversion=1.0 duplex=full ip=169.254.71.235 latency=16 link=yes maxlatency=64 mingnt=64 multicast=yes port=MII speed=100Mbit/s
+             resources: irq:41 memory:f5200000-f53fffff memory:f5100000-f51fffff
+  *-input
+       product: PMU
+       physical id: 1
+       logical name: input0
+       logical name: /dev/input/event0
+       capabilities: platform
+  *-network
+       description: Wireless interface
+       physical id: 2
+       bus info: usb@1:1
+       logical name: wlP1p16s27f2u1
+       serial: 34:e8:94:c8:af:4b
+       capabilities: ethernet physical wireless
+       configuration: broadcast=yes driver=r8188eu ip=192.168.100.118 multicast=yes wireless=IEEE 802.11bgn

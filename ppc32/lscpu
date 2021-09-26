@@ -1,0 +1,14 @@
+Architecture:        ppc
+CPU op-mode(s):      32-bit
+Byte Order:          Big Endian
+CPU(s):              1
+On-line CPU(s) list: 0
+Model name:          7447A, altivec supported
+Model:               1.2 (pvr 8003 0102)
+Thread(s) per core:  1
+Core(s) per socket:  1
+Socket(s):           1
+BogoMIPS:            83.24
+L1d cache:           32 KiB (1 instance)
+L1i cache:           32 KiB (1 instance)
+L2 cache:            512 KiB (1 instance)
