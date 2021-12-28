@@ -3,6 +3,7 @@
               cgroups |                                 sysinit
                cronie |      default                           
                 devfs |                                 sysinit
+               dhcpcd |      default                           
                 dmesg |                                 sysinit
                  fsck | boot                                   
              hostname | boot                                   
@@ -17,8 +18,8 @@
                  mtab | boot                                   
      net.enP2p32s15f0 |      default                           
    net.wlP1p16s27f2u1 |      default                           
-           ntp-client |      default                           
                procfs | boot                                   
+                 rngd | boot                                   
                  root | boot                                   
          save-keymaps | boot                                   
     save-termencoding | boot                                   

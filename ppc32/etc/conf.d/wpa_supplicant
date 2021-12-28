@@ -8,4 +8,4 @@
 # wpa_supplicant accepts.
 #
 #wpa_supplicant_args=""
-wpa_supplicant_args="-B -M -c/etc/wpa_supplicant/wpa_supplicant.conf"
+wpa_supplicant_args="-B -M -c/etc/wpa_supplicant/wpa_supplicant.conf -Dnl80211,wext -qq -f /var/log/wpa_supplicant.log"
